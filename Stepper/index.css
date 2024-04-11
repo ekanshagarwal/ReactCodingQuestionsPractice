@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-number {
+  height: 30px;
+  width: 30px;
+  padding: auto;
+  border-radius: 50%;
+  background-color: #acaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.step-name {
+  font-size: 14px;
+}
+
+.active .step-number {
+  background-color: blue;
+  color: white;
+}
+
+.complete .step-number {
+  background-color: green;
+  color: white;
+}
+
+.progress-bar {
+  position: absolute;
+  top: 25%;
+  left : 0;
+  height: 4px;
+  background-color: #acaaaa;
+}
+
+.progress {
+  height: 100%;
+  background-color: green;
+  transition: 0.2s ease;
+}
